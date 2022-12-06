@@ -1,31 +1,29 @@
 <app-nav></app-nav>
 <div class="container">
-<div class="row">
-    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-        <table class="table">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+        <table class="table table-bordered border-dark">
             <thead>
-              <tr>
-                <th scope="col">Id</th>
-                <th scope="col"> Title</th>
-                <th scope="col">Description</th>
-                <th scope="col">Date</th>
-                <th scope="col">Duration</th>
-                <th scope="col">Venue</th>
-             </tr>
+                <tr>
+                    <th scope="col">courseTitle</th>
+                    <th scope="col">courseVenue</th>
+                    <th scope="col">courseDescription</th>
+                    <th scope="col">courseDuration</th>
+                    <th scope="col">courseDate</th>
+                </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let i of courses">
-                <td>{{i._id}}</td>
-                <td>{{i.courseTitle}}</td>
-                <td>{{i.courseDescription}}</td>
-                <td>{{i.courseDate}}</td>
-                <td>{{i.courseDuration}}</td>
-                <td>{{i.courseVenue}}</td>
-            
-              </tr>
-             
+                <tr *ngFor="let i of data">
+                    <td>{{i.coursetitle}}</td>
+                    <td>{{i.venue}}</td>
+                    <td>{{i.description}}</td>
+                    <td>{{i.duration}}</td>
+                    <td>{{i.date}}</td>
+                </tr>
             </tbody>
-          </table>
+        </table>
+
+        </div>
     </div>
 </div>
-
