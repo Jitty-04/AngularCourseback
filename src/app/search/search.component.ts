@@ -20,6 +20,7 @@ export class SearchComponent {
         console.log(response)
         if(response.length==0){
           alert("Invalid course title")
+          this.coursetitle=""
         }
         else{
           this.searchCourse=response;
